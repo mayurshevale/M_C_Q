@@ -1,30 +1,34 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Home.css"; // import the CSS file
 import "bootstrap/dist/css/bootstrap.min.css"; // import Bootstrap CSS
+import "bootstrap/dist/js/bootstrap.bundle.min.js"; // import Bootstrap JavaScript
 
 function Home() {
-  const [showNavbar, setShowNavbar] = useState(false);
-
-  const toggleNavbar = () => {
-    setShowNavbar(!showNavbar);
-  };
-
   return (
     <div className="container-fluid">
+      {/* Add the floating button */}
+      <a href="#" className="btn btn-primary btn-floating">
+        <i className="fa fa-plus"></i>
+      </a>
+
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <a className="navbar-brand" href="/">Home</a>
-
-
+        {/* Add content to navbar-brand */}
+        <a className="navbar-brand" href="/">
+          Sanghamitra Quiz App
+        </a>
         <button
           className="navbar-toggler"
           type="button"
-          onClick={toggleNavbar}
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-
-        <div className={`collapse navbar-collapse ${showNavbar && "show"}`} id="navbarNav">
-          <ul className="navbar-nav">
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav ms-auto"> {/* Add ms-auto class to align the items to the right */}
             <li className="nav-item active">
               <a className="nav-link" href="/">
                 Home
@@ -53,13 +57,12 @@ function Home() {
           </ul>
         </div>
       </nav>
-
       <div className="container my-5">
-        <h1 className="text-center welcome-text">Welcome to Sanghamitra Quiz App</h1>
+        <h1 className="text-center">Welcome to Sanghamitra Quiz App</h1>
 
         <div className="jumbotron text-center my-5">
           <h2>Ready to Test Your Knowledge?</h2>
-          <a className="btn btn-primary btn-lg mt-3" href="/quizzes" role="button">
+          <a className="btn btn-primary btn-lg mt-3" href="/quiz" role="button">
             Start Quiz
           </a>
         </div>

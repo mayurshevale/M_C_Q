@@ -1,71 +1,160 @@
-/* Navbar */
+* Set global font-family */
+body {
+font-family: 'Arial', sans-serif;
+}
+
+/* Style the navbar */
 .navbar {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+background-color: #ab1515;
+box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+border-radius: 0px;
+padding: 20px;
 }
 
 .navbar-brand {
-  font-size: 1.5rem;
-  font-weight: bold;
+font-size: 32px;
+font-weight: bold;
+color: #333333;
 }
 
-.nav-item {
-  margin-right: 1rem;
+.navbar-toggler {
+color: #333333;
+border-color: #333333;
 }
 
-/* Jumbotron */
+.navbar-toggler:hover {
+color: #09ff00;
+border-color: #09ff00;
+}
+
+.navbar-nav .nav-item {
+margin-right: 20px;
+}
+
+.nav-link {
+color: #333333;
+font-weight: bold;
+}
+
+.nav-link:hover {
+color: #09ff00;
+}
+
+/* Style the container */
+.container-fluid {
+margin-top: 20px;
+}
+
+.container {
+padding: 20px;
+background-color: #ffffff;
+box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+border-radius: 5px;
+margin-bottom: 20px;
+}
+
+/* Style the jumbotron */
 .jumbotron {
-  background-color: #f7f7f7;
-  padding: 3rem;
-  margin-top: 5rem;
-  border-radius: 0.5rem;
+background-color: #e7a151;
+color: #9a5404;
+padding: 50px;
+margin-top: 50px;
+border-radius: 5px;
 }
 
 .jumbotron h2 {
-  font-size: 2.5rem;
-  font-weight: bold;
+font-size: 48px;
+font-weight: bold;
 }
 
-/* About section */
-.container.my-5 h2 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 2rem;
-}
-.container.my-5 h1 {
-  font-size: 4.5rem;
-  width: 100%;
-  font-weight: bold;
-  margin-bottom: 2rem;
-  background-color: rgb(165, 209, 243);
+.btn-primary {
+background-color: #ffffff;
+color: #1ac85d;
+border: 2px solid #0d8502;
+font-weight: bold;
 }
 
-/* Home.css */
-.container.my-5 .welcome-text {
-  font-size: 4.5rem;
-  width: 100%;
-  font-weight: bold;
-  margin-bottom: 2rem;
-  background-color: rgb(165, 209, 243);
-}
-.welcome-text {
-  width: 100%;
-  text-align: center;
+.btn-primary:hover {
+background-color: #1fd70b;
+color: #ffffff;
 }
 
-
-.container.my-5 p {
-  font-size: 1.1rem;
-  line-height: 1.8;
-}
-
-/* Footer */
+/* Style the footer */
 .footer {
-  margin-top: 5rem;
-  background-color: #f7f7f7;
-  text-align: center;
+background-color: #ffffff;
+box-shadow: 0px -4px 5px rgba(0, 0, 0, 0.1);
+border-radius: 5px;
+padding: 20px;
+position: fixed;
+bottom: 0;
+width: 100%;
 }
 
 .footer p {
-  font-size: 1.1rem;
+font-weight: bold;
+color: #333333;
 }
+
+/* Media Queries */
+@media (max-width: 767px) {
+.navbar-nav {
+flex-direction: column;
+align-items: center;
+}
+
+
+.nav-link {
+    margin: 10px;
+}
+}
+
+/* Navbar Adjustments */
+.navbar-collapse {
+justify-content: flex-end;
+}
+
+.navbar-nav {
+flex-direction: column;
+text-align: center;
+}
+
+.navbar-nav .nav-item {
+margin: 10px 0;
+}
+
+.navbar-toggler {
+border: none;
+}
+
+/* Additional Styles */
+h1 {
+font-size: 60px;
+color: #ab1515;
+text-align: center;
+margin-top: 50px;
+}
+
+h2 {
+font-size: 36px;
+color: #333333;
+text-align: center;
+margin-top: 50px;
+}
+
+p {
+font-size: 18px;
+line-height: 1.5;
+color: #666666;
+text-align: justify;
+margin-bottom: 20px;
+}
+
+.btn-secondary {
+background-color: #ab1515;
+color: #ffffff;
+border: 2px solid #333333;
+font-weight:
+
+}
+
+
